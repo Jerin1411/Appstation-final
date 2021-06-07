@@ -1,0 +1,129 @@
+.banner {
+  margin: 100px 0 0;
+  z-index: 1;
+  position: relative;
+
+  &:before {
+    content: " ";
+    position: absolute;
+    background: url("../images/banner/banner-bg.png") 0 0 no-repeat;
+    background-position: right;
+    background-size: contain;
+    top: 0;
+    bottom: 0px;
+    right: 90px;
+    width: 750px;
+
+    @media (max-width: 1199px){
+        width: 445px;
+    }
+    @media (max-width: 767px){
+      display: none;
+    }
+  }
+  // &:after {
+  //     content: " ";
+  //     /* top: 75%; */
+  //     bottom: -14%;
+  //     /* left: 0; */
+  //     right: 8%;
+  //     position: absolute;
+  //     background: url("../images/bg/banner-particle.png") 0 0 no-repeat;
+  //     background-position: right;
+  //     width: 1393px;
+  //     height: 388px;
+  // }
+
+  &__content {
+    max-width: 645px;
+    @media (max-width: 1199px){
+        max-width: 480px;
+    }
+
+    h2 {
+      font-size: 80px;
+      font-weight: 600;
+      color: $primary-color;
+      font-family: $font-stack-1;
+      position: relative;
+      @media (max-width: 1199px){
+        font-size: 50px;
+    }
+    @media (max-width: 576px){
+        font-size: 30px;
+      }
+      &:before {
+        content: "";
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: url("../images/icons/particle-up-blue.svg") 0 0 no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: -57px;
+        top: 28px;
+      }
+    }
+    p {
+      font-size: 20px;
+      font-weight: 100;
+      color: #241e1e;
+      font-family: $font-stack-1;
+      margin-bottom: 25px;
+      @media (max-width: 767px){
+        font-size: 13px;
+      }
+    }
+  }
+  .banner_content__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 645px;
+    @media (max-width: 1199px){
+        min-height: 460px;
+    }
+    @media (max-width: 767px){
+        min-height: 295px;
+        justify-content: flex-start;
+      }
+    .banner__left__bar {
+      position: absolute;
+      bottom: 0;
+      left: -122px;
+      padding: 28px 35px;
+      text-align: right;
+      width: 520px;
+      border-radius: 0 20px 20px 0px;
+      box-shadow: 0 1px 17px rgb(36 65 93 / 16%);
+      @media (max-width: 1199px){
+        padding: 20px 35px;
+        width: 460px;
+        bottom: -60px;
+    }
+    @media (max-width: 767px) {
+        bottom: 3px;
+    }
+    @media (max-width: 576px) {
+        padding: 15px 25px;
+        width: 410px;
+        bottom: 15px;
+      }
+
+      span {
+        font-size: 14px;
+        @media (max-width: 576px) {
+            font-size: 12px;
+          }
+      }
+
+      a {
+        color: $secondary-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
