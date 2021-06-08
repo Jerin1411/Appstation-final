@@ -13,33 +13,11 @@ $(document).ready(function () {
 });
 // SLICK SLIDERS BEGINS
 $(".slick-slider-1").slick({
-  arrows: true,
-  dots: false,
+  arrows: false,
+  dots: true,
   infinite:true,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  responsive: [
-    {
-      breakpoint: 1300,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 2,
-        infinite: true,
-        arrows: false,
-        dots: true
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        arrows: false,
-        dots: true
-      }
-    },
-  ]
+  slidesToShow: 1,
+  slidesToScroll: 1
 });
 
 
