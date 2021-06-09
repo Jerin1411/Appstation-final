@@ -26,6 +26,24 @@ $(".slick-slider-2").slick({
   slidesToShow: 3,
   slidesToScroll: 1
 });
+$(".slick-slider-3").slick({
+  arrows: false,
+  dots: false,
+  autoplay:true,
+  infinite:true,
+  slidesToShow: 4,
+  slidesToScroll: 1
+});
+$(".slick-slider-4").slick({
+  arrows: false,
+  dots: true,
+  slidesToShow: 4,
+  slidesToScroll: 4
+});
 
+$("a[href='#top']").click(function() {
+  $("html, body").animate({ scrollTop: 0 }, "slow");
+  return false;
+});
 
 

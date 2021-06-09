@@ -4,7 +4,6 @@
     background-color: $primary-color;
     text-transform: uppercase;
     color: #fff;
-    text-align: center;
     border-radius: 50px;
     position: relative;
     font-size: 14px;
@@ -37,51 +36,65 @@
         background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
         background-size: contain;
         position: absolute;
-        right: 26px;
+        right: 18px;
         top: 16px;
       }
-    }
-    &--view-more {
-      background-color: $yellowish-color;
-      box-shadow: none;
-      width: 180px;
-      padding: 10px 32px;
 
-      &:after {
-        content: "";
+      &--view-more {
+        background-color: $yellowish-color;
+        box-shadow: none;
+        width: 180px;
+        padding: 10px 32px;
+
+        &:after {
+          content: "";
+          display: block;
+          width: 38px;
+          height: 10px;
+          background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
+          background-size: contain;
+          position: absolute;
+          right: 26px;
+          top: 16px;
+        }
+      }
+      &--get-in-touch {
+        background-color: $teritary-color;
         display: block;
-        width: 38px;
-        height: 10px;
-        background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
-        background-size: contain;
-        position: absolute;
-        right: 26px;
-        top: 16px;
+        font-weight: 600;
+        padding: 10px 25px;
+        width: 197px;
+        margin: 25px auto;
+        box-shadow: none;
+        &:after {
+          content: "";
+          display: block;
+          width: 38px;
+          height: 10px;
+          background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
+          background-size: contain;
+          position: absolute;
+          right: 26px;
+          top: 16px;
+        }
+
       }
 
     }
     &--load-more {
+      text-align: center;
       font-weight: 600;
       padding: 10px 20px;
       width: 137px;
       margin: 25px auto;
       box-shadow: none;
     }
-
     &--upload-btn {
       display: block;
+      text-align: center;
       font-weight: 600;
       padding: 10px 20px;
       width: 228px;
-      margin: 25px auto;
-      box-shadow: none;
-    }
-    &--get-in-touch {
-      background-color: $teritary-color;
-      display: block;
-      font-weight: 600;
-      padding: 10px 20px;
-      width: 197px;
       margin: 25px auto;
       box-shadow: none;
     }

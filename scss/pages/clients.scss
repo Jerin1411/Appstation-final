@@ -1,0 +1,28 @@
+
+.clients {
+    background: $greenish-white;
+    padding: 50px 0px;
+
+    &__list {
+        display: flex;
+
+        li {
+            margin-right: 15px;
+
+            figure {
+                background: $white-color;
+                border: 1px solid #ebebeb;
+                border-radius: 12px;
+                padding: 10px;
+
+                img {
+
+                    width: auto;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+    }
+}
