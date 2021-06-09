@@ -1,0 +1,202 @@
+.job__opening {
+    padding: 50px 0px;
+    position: relative;
+
+    &__wrapper{
+        background: #F9F9F9;
+        display: inline-block;
+        border: 1px solid #fff;
+        box-shadow: 0px 1px 18px -13px rgb(0 0 0 / 75%);
+        border-radius: 30px;
+        padding: 15px;
+        width: 100%;
+        margin-bottom: 20px;
+
+        &:hover {
+            background: $primary-color;
+        }
+
+        .job__opening__holder {
+            display: flex;
+            background: $white-color;
+            border-radius: 20px;
+            justify-content: space-between;
+            padding: 15px 10px 15px;
+
+            .job__details {
+
+                h6 {
+                    color: #2A2A30;
+                    font-weight: 600;
+                    font-size: 19px;
+                }
+
+                p {
+                    color: #7E7E7E;
+                    font-weight: 600;
+                    font-size: 14px;
+                    margin-bottom: 5px;
+
+                    span {
+                        color: #2A2A30;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                }
+
+                h5 {
+                    color: #2A2A30;
+                    font-size: 14px;
+                }
+            }
+
+        }
+    }
+
+    &__quote {
+        color: $secondary-color;
+        font-size: 23px;
+        text-align: center;
+        line-height: 34px;
+        margin: 15px 0 30px 0;
+    }
+
+    figure.particle {
+        position: absolute;
+      }
+      .green__diamond {
+        top: 7%;
+        left: 8%;
+        animation: blinkstar2 3s infinite ease-in-out;
+        @keyframes blinkstar2 {
+            0% {
+              transform: translateZ(0) rotateY(0);
+            }
+            50% {
+              transform: translateZ(150px) rotateY(190deg);
+            }
+            80% {
+              transform: translateZ(0) rotateY(360deg);
+            }
+            100% {
+              transform: translateZ(0) rotateY(360deg);
+            }
+          }
+    }
+     .red__diamond {
+        top: 8%;
+        right: 31%;
+        animation: rotateYLogo3 2s infinite ease-in-out;
+        @keyframes rotateYLogo3 {
+            0% {
+              transform: translateZ(0)scale(1);
+            }
+            50% {
+              transform: translateZ(150px)scale(0.7);
+            }
+            80% {
+              transform: translateZ(0) scale(1);
+            }
+            100% {
+              transform: translateZ(0)cale(1);
+            }
+          }
+    }
+    .blue__arrow {
+        top: 3%;
+        right: 2%;
+        animation: shake3 5s infinite;
+        @keyframes shake3 {
+            0% {
+              transform: translateX(0);
+            }
+            25% {
+              transform: rotate(-30deg);
+            }
+            50% {
+                transform: rotate(30deg);
+              }
+          }
+    }
+    .red__tiny {
+        top: 41%;
+        left: 2%;
+        animation: shake1 5s infinite;
+        @keyframes shake1 {
+            0% {
+              transform: translateX(0);
+            }
+            25% {
+              transform: rotate(-30deg);
+            }
+            50% {
+                transform: rotate(30deg);
+              }
+          }
+    }
+     .yellow__star {
+        bottom: 35%;
+        left: 7%;
+        animation: rotateYLogo1 2s infinite ease-in-out;
+        @keyframes rotateYLogo1 {
+            0% {
+              transform: translateZ(0)scale(1);
+            }
+            50% {
+              transform: translateZ(150px)scale(0.7);
+            }
+            80% {
+              transform: translateZ(0) scale(1);
+            }
+            100% {
+              transform: translateZ(0)cale(1);
+            }
+          }
+    }
+    .red__dot {
+        bottom: 63%;
+        right: 8%;
+        animation: dot-jump 5s infinite;
+        @keyframes dot-jump {
+            0% {
+              transform: translateY(0);
+            }
+            25% {
+              transform: translateY(25px);
+            }
+
+            50% {
+              transform: translateY(0px);
+            }
+            80% {
+              transform: translateY(25px);
+            }
+            100% {
+              transform: translateY(0px);
+            }
+          }
+    }
+    .yellow__tiny {
+        bottom: 24%;
+        right: 2%;
+        animation: dot-jump 5s infinite;
+        @keyframes dot-jump {
+            0% {
+              transform: translateY(0);
+            }
+            25% {
+              transform: translateY(25px);
+            }
+
+            50% {
+              transform: translateY(0px);
+            }
+            80% {
+              transform: translateY(25px);
+            }
+            100% {
+              transform: translateY(0px);
+            }
+          }
+    }
+}

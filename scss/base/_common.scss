@@ -1,27 +1,75 @@
-
 .container {
   max-width: 1120px;
   width: auto;
 }
 
-h2 {
-  position: relative;
-  font-size: 45px;
-  line-height: 50px;
-  font-weight: 600;
-  color: $secondary-color;
+.heading {
+  &__main {
+    position: relative;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 600;
+    color: $secondary-color;
 
-  &:after {
-    content: "";
-    background-color: $teritary-color;
-    position: absolute;
-    width: 39px;
-    height: 7px;
-    color: #ffffff;
-    bottom: -25px;
-    z-index: 1;
-    border-radius: 10px;
-    left: 0;
+    &:after {
+      content: "";
+      background-color: $teritary-color;
+      position: absolute;
+      width: 39px;
+      height: 7px;
+      bottom: -25px;
+      z-index: 1;
+      border-radius: 10px;
+      left: 0;
+    }
+
+    &--test {
+      &:after {
+        background-color: $primary-color;
+        content: "";
+        position: absolute;
+        width: 39px;
+        height: 7px;
+        bottom: -25px;
+        z-index: 1;
+        border-radius: 10px;
+        left: 0;
+      }
+    }
+
+    &--light-color {
+      color: $white-color;
+
+      &:after {
+        background-color: $yellowish-color;
+        content: "";
+        position: absolute;
+        width: 39px;
+        height: 7px;
+        bottom: -25px;
+        z-index: 1;
+        border-radius: 10px;
+        left: 0;
+      }
+    }
+
+    &--get-in-touch {
+      font-size: 35px;
+      font-weight: 600;
+      color: $white-color;
+
+      &:after {
+        background-color: $yellowish-color;
+        content: "";
+        position: absolute;
+        width: 39px;
+        height: 7px;
+        bottom: -25px;
+        z-index: 1;
+        border-radius: 10px;
+        left: 0;
+      }
+    }
   }
 
   @media (max-width: 991px) {
@@ -33,15 +81,17 @@ h2 {
   @media (max-width: 576px) {
     padding: 0 0 10px 5px;
   }
-
 }
 
-.section__titles {
+.section__title {
   font-size: 18px;
   font-weight: 600;
   color: $teritary-color;
 
-  // .primary__color__heading {
-
-  // }
+  &--primary__colored {
+    color: $primary-color;
+  }
+  &--yellow__colored {
+    color: $yellowish-color;
+  }
 }

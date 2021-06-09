@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.384" height="62.635" viewBox="0 0 68.384 62.635">
+  <defs>
+    <filter id="Ellipse_5" x="0" y="0" width="62.635" height="62.635" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#c1c1c1" flood-opacity="0.122"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="bag-icon" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#Ellipse_5)">
+      <circle id="Ellipse_5-2" data-name="Ellipse 5" cx="22.317" cy="22.317" r="22.317" transform="translate(9 6)" fill="#ffb71b"/>
+    </g>
+    <path id="suitcase" d="M45.4,7.325H35.044V4.07A4.031,4.031,0,0,0,31.062,0H16.726a4.031,4.031,0,0,0-3.982,4.07V7.325H2.389A2.416,2.416,0,0,0,0,9.767V27.884a2.45,2.45,0,0,0,1.593,2.3V41.509a2.416,2.416,0,0,0,2.389,2.442H43.8a2.416,2.416,0,0,0,2.389-2.442V30.183a2.451,2.451,0,0,0,1.593-2.3V9.767A2.416,2.416,0,0,0,45.4,7.325ZM14.336,4.07a2.416,2.416,0,0,1,2.389-2.442H31.062A2.416,2.416,0,0,1,33.451,4.07V7.325H14.336ZM28.278,7.325h0ZM44.6,41.509a.805.805,0,0,1-.8.814H3.982a.805.805,0,0,1-.8-.814V30.462l17.522,2.47V35A2.416,2.416,0,0,0,23.1,37.44H24.69A2.416,2.416,0,0,0,27.079,35V32.931L44.6,30.462ZM25.486,35a.805.805,0,0,1-.8.814H23.1A.805.805,0,0,1,22.3,35V30.115a.805.805,0,0,1,.8-.814H24.69a.805.805,0,0,1,.8.814Zm20.708-7.114a.808.808,0,0,1-.685.807l-.221.031L27.079,31.288V30.115a2.416,2.416,0,0,0-2.389-2.442H23.1a2.416,2.416,0,0,0-2.389,2.442v1.174l-18.429-2.6a.809.809,0,0,1-.686-.807V9.767a.805.805,0,0,1,.8-.814H45.4a.805.805,0,0,1,.8.814Zm0,0" transform="translate(11.222 3.495)" fill="#4d4d4d" stroke="#4d4d4d" stroke-width="0.75"/>
+  </g>
+</svg>

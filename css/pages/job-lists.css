@@ -1,0 +1,19 @@
+.job__opening__holder .job__details h6 {
+  color: #2A2A30;
+  font-weight: 600;
+  font-size: 19px;
+}
+.job__opening__holder .job__details p {
+  color: #7E7E7E;
+  font-weight: 600;
+  font-size: 19px;
+}
+.job__opening__holder .job__details p span {
+  color: #2A2A30;
+  font-weight: 600;
+  font-size: 14px;
+}
+.job__opening__holder .job__details h5 {
+  color: #2A2A30;
+  font-size: 14px;
+}

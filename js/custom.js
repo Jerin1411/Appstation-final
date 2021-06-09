@@ -19,6 +19,13 @@ $(".slick-slider-1").slick({
   slidesToShow: 1,
   slidesToScroll: 1
 });
+$(".slick-slider-2").slick({
+  arrows: true,
+  dots: false,
+  infinite:false,
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
 
 
 
