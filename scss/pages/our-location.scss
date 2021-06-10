@@ -54,7 +54,7 @@
       position: absolute;
       top: 32%;
       left: 8%;
-      background: #006BDC;
+      background: #006bdceb;
       border-radius: 20px;
       padding: 15px;
       align-items: center;
@@ -74,7 +74,15 @@
             border-radius: 5px;
             top: 10px;
         }
-
+        &:before {
+          content: "";
+          position: absolute;
+          left: 45%;
+          border-width: 19px;
+          border-style: solid;
+          border-color: #006bdceb transparent transparent transparent;
+          bottom: -38px;
+        }
         & figure {
             max-width: 85px;
             height: 85px;
@@ -91,7 +99,7 @@
 
         h4 {
             font-size: 18px;
-            margin-bottom: 5px;
+            margin-bottom: 0px;
           }
 
           p {

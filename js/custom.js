@@ -10,6 +10,14 @@ $(document).ready(function () {
     once: true,
     duration: 800
   });
+    // variables
+    var toTop = $('.to-top');
+    // logic
+    toTop.on('click', function() {
+      $('html, body').animate({
+        scrollTop: $('html, body').offset().top,
+      });
+    });
 });
 // SLICK SLIDERS BEGINS
 $(".slick-slider-1").slick({
@@ -41,9 +49,7 @@ $(".slick-slider-4").slick({
   slidesToScroll: 4
 });
 
-$("a[href='#top']").click(function() {
-  $("html, body").animate({ scrollTop: 0 }, "slow");
-  return false;
-});
+
+
 
 

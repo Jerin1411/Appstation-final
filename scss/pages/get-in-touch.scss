@@ -1,11 +1,51 @@
 .contact__us {
-    background: $primary-color;
+    background-color: $primary-color;
     padding: 40px 0;
+    position: relative;
+
+    &:after {
+        content: "";
+        width: 166px;
+        display: block;
+        height: 218px;
+        background-image: url(../images/icons/dotted-curve.svg);
+        background-size: 217px;
+        position: absolute;
+        top: -33px;
+        z-index: 1;
+        right: 85px;
+        background-repeat: no-repeat;
+    }
 
     &__quote {
         display: flex;
         justify-content:space-between;
         align-items: center;
+        .to-top {
+
+            position: fixed;
+            right: 4%;
+            bottom: 59%;
+            padding: 5px 10px;
+            cursor: pointer;
+            width: 64px;
+            height: 64px;
+            background: #4d4d4d1f;
+            border-radius: 50%;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 41px;
+                height: 50px;
+                background-image: url(../images/icons/scroll-icon.svg);
+                background-size: contain;
+                position: absolute;
+                right: 7px;
+                top: 16px;
+                background-repeat: no-repeat;
+          }
+          }
 
     }
 }
