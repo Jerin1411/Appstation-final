@@ -32,7 +32,29 @@ $(".slick-slider-2").slick({
   dots: false,
   infinite:false,
   slidesToShow: 3,
-  slidesToScroll: 1
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        infinite: true,
+        arrows: true,
+        dots: false,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows: false,
+        dots: true
+      }
+    },
+  ]
 });
 $(".slick-slider-3").slick({
   arrows: false,
@@ -43,8 +65,8 @@ $(".slick-slider-3").slick({
   slidesToScroll: 1
 });
 $(".slick-slider-4").slick({
-  arrows: false,
-  dots: true,
+  arrows: true,
+  dots: false,
   slidesToShow: 4,
   slidesToScroll: 4
 });

@@ -1,6 +1,5 @@
-.btn {
 
-  &__nav {
+  .btn__submit {
     background-color: $primary-color;
     text-transform: uppercase;
     color: #fff;
@@ -8,112 +7,175 @@
     position: relative;
     font-size: 14px;
     font-weight: 600;
-    padding: 14px 32px;
+    padding: 14px 20px;
     transition: all 0.5s;
     display: inline-block;
-    box-shadow: 0px 13px 37px -12px rgba(0, 107, 220, 0.75);
+    box-shadow: 0px 20px 35px -15px rgb(0 107 220 / 75%);
     letter-spacing: 1px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    z-index: 99999;
 
-    // &:hover {
-    //   border: 1px solid $primary-color;
-    //   background: #fff;
-    //   color: $primary-color;
-    // }
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      left: 25px;
+      right: 0px;
+      bottom: 0px;
+      transform: scale(0);
+      transition-property: transform;
+      transition-duration: 0.5s;
+      transition-timing-function: ease;
+      background: $white-color;
+      width: 124px;
+      border-radius: 30px;
+      height: 50px;
 
-    &--hero-btn {
+  }
+
+  &:hover {
+    color: $primary-color;
+    background-color: $white-color;
+    box-shadow: 0px 0px 3px 0px rgb(0 107 220 / 75%);
+    // box-shadow: 0px 20px 35px -15px rgb(0 107 220 / 75%);
+  &:after {
+    transform: scale(2);
+  }
+}
+
+    &--load-more {
+      text-align: center;
+      padding: 8px 20px;
+      width: 135px;
+      margin: 0 auto;
       box-shadow: none;
+      display: block;
+      z-index: 1;
+    }
+    &--upload-more {
+      text-align: center;
+      padding: 10px 20px;
+      width: 215px;
+      margin: 0 auto;
+      display: block;
+      box-shadow: none;
+      z-index: 1;
+    }
+  }
+
+.btn__link {
+    background-color: $primary-color;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 50px;
+    position: relative;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 25px;
+    transition: all 0.5s;
+    display: inline-block;
+    box-shadow: none;
+    letter-spacing: 1px;
+    width: 155px;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 38px;
+      height: 10px;
+      background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
+      background-size: contain;
+      position: absolute;
+      right: 18px;
+      top: 16px;
+    }
+
+    &--read-more {
+      background-color: $primary-color;
+      box-shadow: none;
+      width: 175px;
+      padding: 10px 20px;
+
+    }
+    &--view-more {
+      background-color: $yellowish-color;
+      box-shadow: none;
+      width: 180px;
       padding: 10px 25px;
-      position: relative;
-      width: 155px;
 
       &:after {
         content: "";
-        display: inline-block;
+        display: block;
         width: 38px;
         height: 10px;
         background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
         background-size: contain;
         position: absolute;
-        right: 18px;
+        right: 26px;
         top: 16px;
       }
-      &--read-more {
-        background-color: $primary-color;
-        box-shadow: none;
-        width: 175px;
-        padding: 10px 20px;
-
-        &:after {
-          content: "";
-          display: block;
-          width: 38px;
-          height: 10px;
-          background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
-          background-size: contain;
-          position: absolute;
-          right: 26px;
-          top: 16px;
-        }
-      }
-      &--view-more {
-        background-color: $yellowish-color;
-        box-shadow: none;
-        width: 180px;
-        padding: 10px 25px;
-
-        &:after {
-          content: "";
-          display: block;
-          width: 38px;
-          height: 10px;
-          background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
-          background-size: contain;
-          position: absolute;
-          right: 26px;
-          top: 16px;
-        }
-      }
-      &--get-in-touch {
-        background-color: $teritary-color;
-        display: block;
-        font-weight: 600;
-        padding: 10px 25px;
-        width: 197px;
-        margin: 0;
-        letter-spacing: 1px;
-        box-shadow: none;
-
-        &:after {
-          content: "";
-          display: block;
-          width: 38px;
-          height: 10px;
-          background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
-          background-size: contain;
-          position: absolute;
-          right: 26px;
-          top: 16px;
-        }
-
-      }
-
     }
-    &--load-more {
-      text-align: center;
-      font-weight: 600;
-      padding: 10px 20px;
-      width: 137px;
-      margin: 25px auto;
-      box-shadow: none;
-    }
-    &--upload-btn {
+
+    &--get-in-touch {
+      background-color: $teritary-color;
       display: block;
-      text-align: center;
       font-weight: 600;
-      padding: 10px 20px;
-      width: 228px;
-      margin: 25px auto;
+      padding: 10px 25px;
+      width: 197px;
+      margin: 0;
+      letter-spacing: 1px;
       box-shadow: none;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 38px;
+        height: 10px;
+        background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
+        background-size: contain;
+        position: absolute;
+        right: 26px;
+        top: 16px;
+      }
+
     }
-  }
+
+    &:hover {
+      color: $white-color;
+
+      &:after  {
+        animation: shake 0.7s;
+      }
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        25% {
+          transform: translateX(20px);
+        }
+
+        50% {
+          transform: translateX(0px);
+        }
+        80% {
+          transform: translateX(20px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+
+    }
 }
+
+
+
+
+
+
+
+
+
+
