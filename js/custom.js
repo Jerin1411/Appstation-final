@@ -65,10 +65,13 @@ $(".slick-slider-3").slick({
   slidesToScroll: 1
 });
 $(".slick-slider-4").slick({
+  rows:2,
   arrows: true,
   dots: false,
+  infinite: true,
+	speed: 300,
   slidesToShow: 4,
-  slidesToScroll: 4
+  slidesToScroll: 1
 });
 
 

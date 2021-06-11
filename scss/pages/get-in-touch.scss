@@ -23,15 +23,15 @@
         align-items: center;
         .to-top {
 
-            position: fixed;
-            right: 4%;
-            bottom: 61%;
+            position: absolute;
+            right: 63px;
             padding: 5px 10px;
             cursor: pointer;
             width: 64px;
             height: 64px;
             background: #4d4d4d1f;
             border-radius: 50%;
+            bottom: 101%;
 
             &:after {
                 content: "";

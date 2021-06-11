@@ -1,11 +1,11 @@
 .events {
   padding: 50px 0px;
-  background-image: url(/images/bg/bg-curves.png);
+  background-image: url(../images/bg/bg-curves.png);
   background-color: $greenish-white;
   background-size: cover;
   background-position: bottom;
   box-shadow: 0px 14px 21px -22px rgb(0 0 0);
-  height: 700px;
+  min-height: 1150px;
 
   .slick-slider-4 {
     .slick-arrow {
@@ -25,7 +25,7 @@
       background-repeat: no-repeat;
       background-size: 20px 20px;
       background-position: center;
-      bottom: -22%;
+      bottom: -15%;
     }
 
     .slick-next {
@@ -52,6 +52,10 @@
     max-width: 340px;
     height: 360px;
     position: relative;
+
+    &:nth-child(2) {
+      margin: 50px 0px;
+    }
 
     &__pic {
       margin: auto;

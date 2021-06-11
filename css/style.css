@@ -4,16 +4,16 @@
   color: #fff;
   border-radius: 50px;
   position: relative;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 600;
-  padding: 14px 20px;
+  padding: 10px 15px;
   transition: all 0.5s;
   display: inline-block;
-  box-shadow: 0px 20px 35px -15px rgba(0, 107, 220, 0.75);
+  box-shadow: 0px 12px 19px -5px rgba(0, 107, 220, 0.68);
   letter-spacing: 1px;
   letter-spacing: 1px;
   overflow: hidden;
-  z-index: 99999;
+  z-index: 1;
 }
 .btn__submit:after {
   content: "";
@@ -140,13 +140,13 @@
     transform: translateX(0);
   }
   25% {
-    transform: translateX(20px);
+    transform: translateX(10px);
   }
   50% {
     transform: translateX(0px);
   }
   80% {
-    transform: translateX(20px);
+    transform: translateX(10px);
   }
   100% {
     transform: translateX(0px);
@@ -535,6 +535,7 @@ a:hover {
   align-items: center;
   color: #4D4D4D;
   font-size: 15px;
+  justify-content: flex-end;
 }
 .footer__social__media a {
   margin: 0 20px 0 0;
@@ -587,10 +588,11 @@ a:hover {
   height: 785px;
 }
 .banner__content h2 {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 600;
   color: #006BDC;
   position: relative;
+  line-height: 58px;
 }
 .banner__content h2:after {
   background-color: #D60812;
@@ -631,13 +633,14 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  bottom: 0px;
 }
 .banner__content .slick-slider-1 .slick-dots .slick-active button {
   background: #fff;
   opacity: 1;
-  border: 4px solid #006BDC;
-  height: 16px;
-  width: 16px;
+  border: 3.5px solid #006BDC;
+  height: 13px;
+  width: 13px;
 }
 .banner__content .slick-slider-1 .slick-dots li {
   display: inline-block;
@@ -647,8 +650,8 @@ a:hover {
   border: 0;
   background: #888787;
   display: block;
-  height: 10px;
-  width: 10px;
+  height: 8px;
+  width: 8px;
   outline: 0;
   color: transparent;
   cursor: pointer;
@@ -660,7 +663,11 @@ a:hover {
   padding: 0;
 }
 .banner__content .slick-slider-1 .banner__slider__item__holder {
-  margin-top: 50px;
+  margin-top: 35px;
+}
+.banner__content .slick-slider-1 .banner__slider__item__holder figure img {
+  width: 460px;
+  margin: 0 auto;
 }
 .banner__content .slick-slider-1 .banner__slider__item__holder h4 {
   color: #999999;
@@ -668,6 +675,7 @@ a:hover {
   font-size: 14px;
   text-align: center;
   position: relative;
+  margin-top: -10px;
 }
 .banner__content .slick-slider-1 .banner__slider__item__holder h4:before {
   content: "";
@@ -765,9 +773,9 @@ a:hover {
 .banner__social__medias__holder {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   position: absolute;
-  right: 0;
+  right: 0px;
   bottom: 42%;
   color: #4D4D4D;
 }
@@ -776,17 +784,22 @@ a:hover {
   color: #4D4D4D;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
-  margin: 0 0 10px;
-  border: 1px solid #4D4D4D;
+  margin: 0 20px 10px 0;
+  border: 2px solid #4D4D4D;
 }
 .banner__social__medias__holder p {
   transform: rotate(270deg);
   margin-bottom: 0;
   margin-top: 37px;
   letter-spacing: 1.5px;
+  transform: rotate(270deg);
+  margin-bottom: 20px;
+  margin-top: 37px;
+  letter-spacing: 1.5px;
+  margin-right: -12px;
 }
 @media (max-width: 767px) {
   .banner__social__medias__holder {
@@ -800,7 +813,8 @@ a:hover {
   height: 62px;
   background-color: #4d4d4d;
   position: absolute;
-  bottom: -104px;
+  bottom: -90px;
+  right: 35px;
 }
 .banner__social__medias__holder:before {
   content: "";
@@ -810,6 +824,7 @@ a:hover {
   background-color: #4d4d4d;
   position: absolute;
   top: -72px;
+  right: 40px;
 }
 
 .services {
@@ -822,7 +837,7 @@ a:hover {
 .services:after {
   content: "";
   position: absolute;
-  background: url(/images/bg/big-arrow-dotted.png) center center no-repeat;
+  background: url(../images/bg/big-arrow-dotted.png) center center no-repeat;
   width: 203px;
   height: 300px;
   left: -70px;
@@ -831,7 +846,7 @@ a:hover {
 .services:before {
   content: "";
   position: absolute;
-  background: url(/images/bg/small-arrow-dotted.png) center center no-repeat;
+  background: url(../images/bg/small-arrow-dotted.png) center center no-repeat;
   width: 255px;
   height: 254px;
   right: -92px;
@@ -1081,12 +1096,12 @@ a:hover {
   color: #fff;
   border: 1px solid #0A8DFF;
   box-shadow: 0px 13px 37px -18px rgba(0, 0, 0, 0.75);
-  padding: 20px;
-  border-radius: 30px;
+  padding: 15px;
+  border-radius: 35px;
   margin: 0 20px 0 0;
 }
 .blog__main__news figure img {
-  border-radius: 30px;
+  border-radius: 20px;
 }
 .blog__main__news h6 {
   margin-top: 10px;
@@ -1112,8 +1127,8 @@ a:hover {
   color: #fff;
   border: 1px solid #0A8DFF;
   box-shadow: 0px 3px 29px -17px rgba(0, 0, 0, 0.75);
-  padding: 18px;
-  border-radius: 40px;
+  padding: 15px;
+  border-radius: 30px;
   margin-bottom: 30px;
   margin: 0 0 35px 20px;
   transition: all 0.5s;
@@ -1133,7 +1148,7 @@ a:hover {
   height: 120px;
 }
 .blog__list__news a figure img {
-  border-radius: 10px;
+  border-radius: 20px;
   width: 100%;
   height: 100%;
 }
@@ -1386,15 +1401,15 @@ a:hover {
   align-items: center;
 }
 .contact__us__quote .to-top {
-  position: fixed;
-  right: 4%;
-  bottom: 61%;
+  position: absolute;
+  right: 63px;
   padding: 5px 10px;
   cursor: pointer;
   width: 64px;
   height: 64px;
   background: #4d4d4d1f;
   border-radius: 50%;
+  bottom: 101%;
 }
 .contact__us__quote .to-top:after {
   content: "";
@@ -1571,12 +1586,12 @@ a:hover {
 
 .events {
   padding: 50px 0px;
-  background-image: url(/images/bg/bg-curves.png);
+  background-image: url(../images/bg/bg-curves.png);
   background-color: #F7F9FC;
   background-size: cover;
   background-position: bottom;
   box-shadow: 0px 14px 21px -22px black;
-  height: 700px;
+  min-height: 1150px;
 }
 .events .slick-slider-4 .slick-arrow {
   border: 0;
@@ -1595,7 +1610,7 @@ a:hover {
   background-repeat: no-repeat;
   background-size: 20px 20px;
   background-position: center;
-  bottom: -22%;
+  bottom: -15%;
 }
 .events .slick-slider-4 .slick-next {
   background-color: #4D4D4D;
@@ -1618,6 +1633,9 @@ a:hover {
   max-width: 340px;
   height: 360px;
   position: relative;
+}
+.events__slider__item:nth-child(2) {
+  margin: 50px 0px;
 }
 .events__slider__item__pic {
   margin: auto;

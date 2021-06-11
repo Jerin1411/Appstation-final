@@ -8,7 +8,7 @@
   &:after {
     content: "";
     position: absolute;
-    background: url(/images/bg/big-arrow-dotted.png) center center no-repeat;
+    background: url(../images/bg/big-arrow-dotted.png) center center no-repeat;
     width: 203px;
     height: 300px;
     left: -70px;
@@ -17,7 +17,7 @@
   &:before {
     content: "";
     position: absolute;
-    background: url(/images/bg/small-arrow-dotted.png) center center no-repeat;
+    background: url(../images/bg/small-arrow-dotted.png) center center no-repeat;
     width: 255px;
     height: 254px;
     right: -92px;
