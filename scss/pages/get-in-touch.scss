@@ -1,19 +1,20 @@
 .contact__us {
     background-color: $primary-color;
-    padding: 40px 0;
+    padding: 50px 0;
     position: relative;
+    box-shadow: 0px -24px 41px -31px #000;
 
     &:after {
         content: "";
-        width: 166px;
+        width: 190px;
         display: block;
-        height: 218px;
+        height: 255px;
         background-image: url(../images/icons/dotted-curve.svg);
-        background-size: 217px;
+        background-size: 257px;
         position: absolute;
-        top: -33px;
+        top: -42px;
         z-index: 1;
-        right: 85px;
+        right: 9%;
         background-repeat: no-repeat;
     }
 
@@ -24,8 +25,8 @@
         .to-top {
 
             position: absolute;
-            right: 63px;
-            padding: 5px 10px;
+            right: 145px;
+            padding: 26px 10px;
             cursor: pointer;
             width: 64px;
             height: 64px;

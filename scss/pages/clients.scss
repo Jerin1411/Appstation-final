@@ -1,13 +1,13 @@
 
 .clients {
     background: $greenish-white;
-    padding: 50px 0px;
+    padding: 60px 0px;
 
     &__list {
         display: flex;
 
         li {
-            margin-right: 15px;
+            margin-right: 20px;
 
             figure {
                 background: $white-color;
@@ -15,11 +15,16 @@
                 border-radius: 12px;
                 padding: 10px;
 
+                &:hover > img{
+                    filter: grayscale(0%);
+                }
+
                 img {
 
                     width: auto;
                     display: block;
                     margin: 0 auto;
+                    filter: grayscale(100%);
                 }
             }
         }

@@ -1,5 +1,5 @@
 .services {
-  padding: 60px 0px;
+  padding: 80px 0px;
   min-height: 700px;
   background: $greenish-white;
   position: relative;
@@ -10,9 +10,9 @@
     position: absolute;
     background: url(../images/bg/big-arrow-dotted.png) center center no-repeat;
     width: 203px;
-    height: 300px;
+    height: 260px;
     left: -70px;
-    bottom: 49px;
+    bottom: 80px;
   }
   &:before {
     content: "";
@@ -21,7 +21,8 @@
     width: 255px;
     height: 254px;
     right: -92px;
-    top: 95px;
+    top: 100px;
+    background-size: cover;
   }
 
   &__holder {
@@ -34,12 +35,9 @@
     // height: 275px;
     position: relative;
     display: inline-block;
-    max-width: 330px;
-    position: relative;
-    transition: all 200ms ease-in;
     transform: scale(1);
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     z-index: 2;
 
     &:hover {
@@ -56,12 +54,12 @@
       background: #fff;
       text-align: center;
       border-radius: 30px;
-      padding: 20px;
+      padding: 30px;
 
       span {
         font-size: 21px;
         color: #575f6b;
-        font-weight: 600;
+        font-weight: 700;
         margin: 15px 0px;
 
         @media (min-width: 1400px) {
@@ -70,7 +68,7 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: 15px;
         color: $secondary-color;
 
       }

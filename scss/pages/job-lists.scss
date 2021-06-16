@@ -1,5 +1,5 @@
 .job__opening {
-    padding: 50px 0px;
+    padding: 80px 0px;
     position: relative;
 
     &__wrapper{
@@ -10,7 +10,7 @@
         border-radius: 30px;
         padding: 15px;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
 
         &:hover {
             background: $primary-color;
@@ -20,10 +20,10 @@
             display: flex;
             background: $white-color;
             border-radius: 20px;
-            justify-content: space-between;
-            padding: 15px 10px 15px;
+            padding: 20px 30px 20px 10px;
 
             .job__details {
+              padding-left: 30px;
 
                 h6 {
                     color: #2A2A30;
@@ -59,6 +59,7 @@
         text-align: center;
         line-height: 34px;
         margin: 15px 0 30px 0;
+        font-weight: 500;
     }
 
     figure.particle {

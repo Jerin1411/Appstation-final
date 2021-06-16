@@ -5,9 +5,9 @@
     color: #fff;
     border-radius: 50px;
     position: relative;
-    font-size: 13px;
-    font-weight: 600;
-    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 13px 23px;
     transition: all 0.5s;
     display: inline-block;
     box-shadow: 0px 12px 19px -5px rgb(0 107 220 / 68%);
@@ -53,6 +53,32 @@
       box-shadow: none;
       display: block;
       z-index: 1;
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 25px;
+        right: 0px;
+        bottom: 0px;
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        background: $yellowish-color;
+        width: 127px;
+        border-radius: 30px;
+        height: 50px;
+
+    }
+
+      &:hover {
+        color: $white-color;
+        box-shadow: 0px 0px 3px 0px $yellowish-color;
+      &:after {
+        transform: scale(2);
+      }
+    }
     }
     &--upload-more {
       text-align: center;
@@ -62,6 +88,33 @@
       display: block;
       box-shadow: none;
       z-index: 1;
+
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0px;
+        left: 25px;
+        right: 0px;
+        bottom: 0px;
+        transform: scale(0);
+        transition-property: transform;
+        transition-duration: 0.5s;
+        transition-timing-function: ease;
+        background: $yellowish-color;
+        width: 127px;
+        border-radius: 30px;
+        height: 50px;
+
+    }
+
+      &:hover {
+        color: $white-color;
+        box-shadow: 0px 0px 3px 0px $yellowish-color;
+      &:after {
+        transform: scale(2);
+      }
+    }
     }
   }
 
@@ -136,7 +189,7 @@
         background: url(../images/icons/forward-arrow.svg) 0 0 no-repeat;
         background-size: contain;
         position: absolute;
-        right: 26px;
+        right: 20px;
         top: 16px;
       }
 

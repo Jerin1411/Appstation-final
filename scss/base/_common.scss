@@ -1,5 +1,9 @@
+body {
+  font-family: 'Manrope', sans-serif !important;
+}
+
 .container {
-  max-width: 1120px;
+  max-width: 1300px;
   width: auto;
 }
 
@@ -8,8 +12,16 @@
     position: relative;
     font-size: 45px;
     line-height: 50px;
-    font-weight: 600;
+    font-weight: 800;
     color: $secondary-color;
+
+    &.small-font {
+      font-size: 40px;
+    }
+
+    &.small-size {
+      font-size: 35px;
+    }
 
     &:after {
       content: "";
@@ -95,7 +107,7 @@
 
 .section__title {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
   position: relative;
 
     &--primary__colored {

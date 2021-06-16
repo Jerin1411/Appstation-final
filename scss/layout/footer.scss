@@ -10,23 +10,20 @@
 
     ul {
       display: flex;
-      margin: 20px 0px;
+      margin: 30px 0px 15px 0;
 
       li {
 
         a {
-          font-size: 14px;
-          font-weight: 500;
+          font-size: 15px;
+          font-weight: 700;
           color: #4d4d4d;
           text-transform: uppercase;
           z-index: 0;
           cursor: pointer;
-          margin: 0 12px;
+          margin: 0 18px 0 0;
           position: relative;
-
-          @media (min-width: 1199px) {
-            font-size: 13px;
-          }
+          letter-spacing: 1px;
 
           &:hover {
 
@@ -57,10 +54,13 @@
 
     h3 {
       display: flex;
-      align-items: center;
-      color: $secondary-color;
-      font-size: 15px;
+      align-items: flex-end;
+      color: #4D4D4D;
+      font-size: 14px;
       justify-content: flex-end;
+      font-weight: 600;
+      margin-bottom: 0;
+
     }
 
     a {
@@ -107,6 +107,7 @@
       font-size: 18px;
       color: #241e1e;
       letter-spacing: 2px;
+      font-weight: 500;
       display: flex;
       margin-bottom: 0;
       align-items: baseline;
@@ -119,3 +120,8 @@
     }
   }
 }
+
+
+
+
+

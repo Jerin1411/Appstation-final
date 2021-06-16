@@ -28,6 +28,8 @@ $(".slick-slider-1").slick({
   slidesToScroll: 1
 });
 $(".slick-slider-2").slick({
+  centerMode: true,
+  centerPadding: '60px',
   arrows: true,
   dots: false,
   infinite:false,
