@@ -1,9 +1,10 @@
 .location {
   padding: 80px 0px;
-  background-image: url(../images/bg/world-map.png);
+  background-image: url(/images/bg/bg-world-globe.jpg);
   background-repeat: no-repeat;
   position: relative;
   box-shadow: 0px 14px 21px -22px rgb(0 0 0);
+  z-index: -1;
 
   &:after {
     content: "";
@@ -204,12 +205,28 @@
 
   &__two{
     position: absolute;
-    top: 39%;
-    right: 45%;
-    width: 38px;
-    height: 38px;
+    top: 41%;
+    right: 46%;
+    width: 5px;
+    height: 5px;
     background-color: #0a8dff8c;
     border-radius: 50%;
+    animation: boom-out 1.5s linear infinite;
+
+      @keyframes boom-out {
+        0% {
+          box-shadow: 0 0 0 0 rgba($primary-color, 0.3),
+                      0 0 0 15px rgba($primary-color, 0.3),
+                      0 0 0 30px rgba($primary-color, 0.3);
+                      // 0 0 0 25px rgba($primary-color, 0.3);
+        }
+        100% {
+          box-shadow: 0 0 0 15px rgba($primary-color, 0.3),
+                      0 0 0 30px rgba($primary-color, 0.3),
+                      // 0 0 0 25px rgba($primary-color, 0.3),
+                      0 0 0 45px rgba($primary-color, 0);
+        }
+      }
 
 
     &:before {
@@ -219,9 +236,11 @@
       position: absolute;
       width: 40px;
       height: 40px;
-      top: -12px;
+      top: -30px;
       background-size: contain;
+      right: -19px;
     }
+  }
 
   }
-}
+

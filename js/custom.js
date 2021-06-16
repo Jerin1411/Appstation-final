@@ -29,10 +29,9 @@ $(".slick-slider-1").slick({
 });
 $(".slick-slider-2").slick({
   centerMode: true,
-  centerPadding: '60px',
   arrows: true,
   dots: false,
-  infinite:false,
+  infinite:true,
   slidesToShow: 3,
   slidesToScroll: 1,
   responsive: [

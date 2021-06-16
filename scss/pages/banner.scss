@@ -1,5 +1,5 @@
 .banner {
-  margin: 115px 0 0;
+  margin: 120px 0 0;
   z-index: 1;
   position: relative;
   min-height: 815px;
@@ -34,7 +34,7 @@
         position: absolute;
         width: 39px;
         height: 7px;
-        bottom: -25px;
+        bottom: -30px;
         z-index: 1;
         border-radius: 10px;
         left: 0;
@@ -53,7 +53,7 @@
     p {
       font-size: 18px;
       color: #241e1e;
-      margin: 50px 0 25px 0;
+      margin: 55px 0 25px 0;
       line-height: 30px;
 
       @media (max-width: 767px) {
@@ -139,7 +139,7 @@
     align-items: flex-end;
     position: absolute;
     right: 0px;
-    bottom: 37%;
+    bottom: 38%;
     color: #4D4D4D;
 
     a {
@@ -209,7 +209,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      bottom: -40px;
+      bottom: -35px;
 
       .slick-active {
 
@@ -263,7 +263,7 @@
           font-size: 14px;
           text-align: center;
           position: relative;
-          margin-top: -25px;
+          margin-top: -27px;
 
           &:before {
             content: "";

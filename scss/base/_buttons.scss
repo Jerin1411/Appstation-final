@@ -39,7 +39,7 @@
     color: $primary-color;
     background-color: $white-color;
     box-shadow: 0px 0px 3px 0px rgb(0 107 220 / 75%);
-    // box-shadow: 0px 20px 35px -15px rgb(0 107 220 / 75%);
+
   &:after {
     transform: scale(2);
   }
@@ -49,7 +49,7 @@
       text-align: center;
       padding: 8px 20px;
       width: 135px;
-      margin: 0 auto;
+      margin: 0 auto 60px;
       box-shadow: none;
       display: block;
       z-index: 1;
