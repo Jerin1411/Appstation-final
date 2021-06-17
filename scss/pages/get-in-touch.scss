@@ -1,6 +1,6 @@
 .contact__us {
     background-color: $primary-color;
-    padding: 50px 0;
+    padding: 40px 0;
     position: relative;
     box-shadow: 0px -12px 57px -30px #000000;
 
@@ -8,55 +8,59 @@
         content: "";
         width: 190px;
         display: block;
-        height: 262px;
+        height: 264px;
         background-image: url(../images/icons/dotted-curve.svg);
-        background-size: 264px;
+        background-size: 240px;
         position: absolute;
-        top: -40px;
+        top: -37px;
         z-index: 1;
-        right: 9%;
+        right: 170px;
         background-repeat: no-repeat;
+
     }
 
     &__quote {
         display: flex;
         justify-content:space-between;
         align-items: center;
-        .to-top {
 
-            position: absolute;
-            right: 123px;
-            padding: 26px 10px;
-            cursor: pointer;
-            width: 96px;
-            height: 96px;
-            background: #4d4d4d1f;
-            border-radius: 50%;
-            bottom: 101%;
-            animation: boom-out2 1s linear infinite;
+        .to-top {
+          position: absolute;
+          right: 188px;
+          cursor: pointer;
+          width: 2px;
+          height: 2px;
+          background: #4d4d4d1f;
+          border-radius: 50%;
+          bottom: 119%;
+
+            animation: boom-out2 1.5s linear infinite;
 
             @keyframes boom-out2 {
                 0% {
-                  box-shadow: 0 0 0 0 rgba(#4d4d4d1f, 0.3),
-                              0 0 0 1em rgba(#4d4d4d1f, 0.3);
-                }
-                100% {
-                  box-shadow: 0 0 0 1em rgba(#4d4d4d1f, 0.3),
-                              0 0 0 3em rgba(#4d4d4d1f, 0);
-                }
+                    box-shadow: 0 0 0 0 rgba( #4d4d4d1f,1),
+                      // 0 0 0 15px rgba($primary-color, 0.3),
+                      // 0 0 0 30px rgba($primary-color, 0.3);
+                    // 0 0 0 25px rgba($primary-color, 0.3);
+                  }
+                  100% {
+                    box-shadow:0 0 0 40px rgba( #4d4d4d1f,0);
+                      // 0 0 0 30px rgba($primary-color, 0.3),
+                      // 0 0 0 25px rgba($primary-color, 0.3),
+
+                  }
               }
 
             &:after {
-                content: "";
-                display: block;
-                width: 41px;
-                height: 75px;
-                background-image: url(../images/icons/scroll-icon.svg);
-                /* background-size: contain; */
-                position: absolute;
-                right: 28px;
-                top: 32px;
-                background-repeat: no-repeat;
+              content: "";
+              display: block;
+              width: 41px;
+              height: 68px;
+              background-image: url(../images/icons/scroll-icon.svg);
+              position: absolute;
+              right: -19px;
+              top: -26px;
+              background-repeat: no-repeat;
              }
 
         }

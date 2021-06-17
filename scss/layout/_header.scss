@@ -85,7 +85,7 @@
         position: absolute;
         right: -20px;
         top: 100%;
-        background: #ffffff;
+        background: $white-color;
         padding: 10px;
         display: none;
         box-shadow: 5px 3px 16px rgb(0 0 0 / 16%);
@@ -185,7 +185,7 @@
       @mixin bar {
         height: 2px;
         border-radius: 50px;
-        background-color: #ffffff;
+        background-color: $white-color;
         transition: 0.4s;
         display: block;
         width: 25px;

@@ -1,6 +1,6 @@
 .location {
   padding: 80px 0px;
-  background-image: url(/images/bg/bg-world-globe.jpg);
+  background-image: url(../images/bg/bg-world-globe.jpg);
   background-repeat: no-repeat;
   position: relative;
   box-shadow: 0px 14px 21px -22px rgb(0 0 0);
@@ -21,50 +21,51 @@
     content: "";
     position: absolute;
     background: url(../images/bg/blue-dotted-bg.png) no-repeat;
-    width: 140px;
-    height: 150px;
+    width: 259px;
+    height: 200px;
     right: 0;
     top: 0px;
-    background-size: 200px;
   }
 
   &__holder {
-    border: 20px solid $greenish-white;
+    background-color: $greenish-white;
     border-radius: 40px;
     box-shadow: 0px 6px 29px -10px rgb(0 0 0 / 23%);
     position: relative;
     overflow: hidden;
-    margin: 142px 0 15px 0;
-    height: 375px;
+    margin: 142px 0 10px 0;
+    height: 410px;
+    padding: 20px;
 
-    &.parent-company {
-        img {
-          object-fit: none;
-          object-position: right;
-        }
+    .parent__company {
+      height: 100%;
 
-    }
-
-    &.native-company {
       img {
         object-fit: none;
+        object-position: right;
+        border-radius: 30px;
+        height: 100%;
+        width: 100%;
       }
     }
 
-    & figure {
+    .native__company {
       height: 100%;
 
-      iframe {
+      img {
+        object-fit: none;
+        height: 100%;
+        width: 100%;
         border-radius: 30px;
       }
     }
 
-    &__address__left {
+    &__address {
       display: flex;
-      color: #F7F9FC;
+      color: #f7f9fc;
       position: absolute;
-      top: 31%;
-      left: 5%;
+      top: 29%;
+      left: 11%;
       background: #006bdceb;
       border-radius: 20px;
       padding: 15px;
@@ -72,18 +73,84 @@
       padding: 15px;
       width: 410px;
 
+      &:after {
+        content: "";
+        background: url(../images/icons/copy-click.svg) no-repeat;
+        background-position: center;
+        background-color: #0a8dff;
+        position: absolute;
+        width: 28px;
+        height: 28px;
+        right: 11px;
+        z-index: 1;
+        border-radius: 5px;
+        top: 10px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 45%;
+        border-width: 15px;
+        border-style: solid;
+        border-color: #006bdceb transparent transparent transparent;
+        bottom: -30px;
+      }
+
+      & figure {
+        max-width: 90px;
+        height: 90px;
+        flex: 0 0 auto;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 15px;
+          object-fit: none;
+        }
+      }
+
+      &__details {
+        padding: 0 0 0 15px;
+
+        h4 {
+          font-size: 19px;
+          margin-bottom: 0px;
+        }
+
+        p {
+          font-size: 16px;
+          margin-bottom: 0;
+          display: block;
+        }
+      }
+
+      &--right {
+        display: flex;
+        color: #f7f9fc;
+        position: absolute;
+        top: 34%;
+        left: 10%;
+        background: #006bdceb;
+        border-radius: 20px;
+        padding: 15px;
+        align-items: center;
+        padding: 15px;
+        width: 410px;
+
         &:after {
-            content: "";
-            background: url(../images/icons/copy-click.svg) no-repeat;
-            background-position: center;
-            background-color: #0A8DFF;
-            position: absolute;
-            width: 28px;
-            height: 28px;
-            right: 11px;
-            z-index: 1;
-            border-radius: 5px;
-            top: 10px;
+          content: "";
+          background: url(../images/icons/copy-click.svg) no-repeat;
+          background-position: center;
+          background-color: #0a8dff;
+          position: absolute;
+          width: 28px;
+          height: 28px;
+          right: 11px;
+          z-index: 1;
+          border-radius: 5px;
+          top: 10px;
+          cursor: pointer;
         }
         &:before {
           content: "";
@@ -94,140 +161,79 @@
           border-color: #006bdceb transparent transparent transparent;
           bottom: -30px;
         }
-        & figure {
-          max-width: 90px;
-          height: 90px;
-          flex: 0 0 auto;
-
-
-            img {
-                width: 100%;
-                height: 100%;
-                border-radius: 15px;
-            }
-        }
-
-      &__details {
-        padding: 0 0 0 15px;
-
-        h4 {
-            font-size: 19px;
-            margin-bottom: 0px;
-          }
-
-          p {
-            font-size: 16px;
-            display: block;
-          }
       }
-    }
-    &__address__right {
-      display: flex;
-      color: #F7F9FC;
-      position: absolute;
-      top: 34%;
-      left: 6%;
-      background: #006bdceb;
-      border-radius: 20px;
-      padding: 15px;
-      align-items: center;
-      padding: 15px;
-      width: 410px;
-      &:after {
-        content: "";
-        background: url(../images/icons/copy-click.svg) no-repeat;
-        background-position: center;
-        background-color: #0A8DFF;
-        position: absolute;
-        width: 28px;
-        height: 28px;
-        right: 11px;
-        z-index: 1;
-        border-radius: 5px;
-        top: 10px;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      left: 45%;
-      border-width: 15px;
-      border-style: solid;
-      border-color: #006bdceb transparent transparent transparent;
-      bottom: -30px;
-    }
-    & figure {
-      max-width: 90px;
-      height: 90px;
-      flex: 0 0 auto;
-
-
-        img {
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-        }
-    }
-
-  &__details {
-    padding: 0 0 0 15px;
-
-    h4 {
-        font-size: 19px;
-        margin-bottom: 0px;
-      }
-
-      p {
-        font-size: 16px;
-        display: block;
-      }
-  }
-
     }
   }
 
   &__name {
-    font-size: 40px;
+    font-size: 45px;
     color: $secondary-color;
     font-weight: 700;
     text-align: center;
   }
 
   &__one {
-    background: url(../images/icons/applab-location-icon.png) no-repeat;
     position: absolute;
-    top: 27%;
-    left: 44%;
-    width: 35px;
-    height: 44px;
+    top: 29%;
+    right: 55%;
+    width: 5px;
+    height: 5px;
+    background-color: $primary-color;
     border-radius: 50%;
-    background-size: contain;
+    animation: boom-out1 1.5s linear infinite;
+
+    @keyframes boom-out1 {
+      0% {
+        box-shadow: 0 0 0 0 rgba( $primary-color,1),
+          // 0 0 0 15px rgba($primary-color, 0.3),
+          // 0 0 0 30px rgba($primary-color, 0.3);
+        // 0 0 0 25px rgba($primary-color, 0.3);
+      }
+      100% {
+        box-shadow:0 0 0 20px rgba( $primary-color,0);
+          // 0 0 0 30px rgba($primary-color, 0.3),
+          // 0 0 0 25px rgba($primary-color, 0.3),
+
+      }
+    }
+
+    &:before {
+      content: "";
+      background: url(../images/icons/applab-location-icon.png) no-repeat;
+      background-position: center;
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      top: -30px;
+      background-size: contain;
+      right: -19px;
+    }
   }
 
-  &__two{
+  &__two {
     position: absolute;
     top: 41%;
     right: 46%;
     width: 5px;
     height: 5px;
-    background-color: #0a8dff8c;
+    background-color: $primary-color;
     border-radius: 50%;
     animation: boom-out 1.5s linear infinite;
 
-      @keyframes boom-out {
-        0% {
-          box-shadow: 0 0 0 0 rgba($primary-color, 0.3),
-                      0 0 0 15px rgba($primary-color, 0.3),
-                      0 0 0 30px rgba($primary-color, 0.3);
-                      // 0 0 0 25px rgba($primary-color, 0.3);
-        }
-        100% {
-          box-shadow: 0 0 0 15px rgba($primary-color, 0.3),
-                      0 0 0 30px rgba($primary-color, 0.3),
-                      // 0 0 0 25px rgba($primary-color, 0.3),
-                      0 0 0 45px rgba($primary-color, 0);
-        }
+    @keyframes boom-out {
+      0% {
+        box-shadow: 0 0 0 0 rgba( $primary-color,1),
+          // 0 0 0 15px rgba($primary-color, 0.3),
+          // 0 0 0 30px rgba($primary-color, 0.3);
+        // 0 0 0 25px rgba($primary-color, 0.3);
       }
+      100% {
+        box-shadow:0 0 0 20px rgba( $primary-color,0);
+          // 0 0 0 30px rgba($primary-color, 0.3),
+          // 0 0 0 25px rgba($primary-color, 0.3),
 
+      }
+    }
 
     &:before {
       content: "";
@@ -241,6 +247,4 @@
       right: -19px;
     }
   }
-
-  }
-
+}
