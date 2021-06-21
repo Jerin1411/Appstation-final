@@ -4,6 +4,7 @@
   background-repeat: no-repeat;
   position: relative;
   box-shadow: 0px 14px 21px -22px rgb(0 0 0);
+  background-position: center;
   z-index: -1;
 
   &:after {
@@ -212,7 +213,7 @@
 
   &__two {
     position: absolute;
-    top: 41%;
+    top: 40%;
     right: 46%;
     width: 5px;
     height: 5px;

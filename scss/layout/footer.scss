@@ -70,16 +70,19 @@
       justify-content: center;
       align-items: center;
       transition: all 0.5s;
+      transform: translateY(0);
 
       i {
         color: #7a7a7a;
         font-size: 20px;
+        transition: all 0.4s;
       }
 
       &:hover {
 
         i {
           color: $primary-color;
+          transform: translateY(-6px);
         }
       }
     }

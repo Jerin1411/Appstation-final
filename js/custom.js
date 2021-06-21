@@ -65,8 +65,12 @@ $(".slick-slider-3").slick({
   centerPadding: '80px',
   arrows: false,
   dots: false,
-  autoplay:true,
-  // autoplaySpeed: 0,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 7000,
+  cssEase:'linear',
+  infinite: true,
+  focusOnSelect: false,
   infinite:true,
   slidesToShow: 5,
   slidesToScroll: 1
@@ -75,19 +79,16 @@ $(".slick-slider-3").slick({
 $(".slick-slider-4").slick({
   rows:2,
   arrows: true,
-
-  // focusOnSelect:true,
-  // centerPadding:100,
+  autoplay: true,
+  autoplaySpeed: 0,
+  speed: 7000,
+  cssEase:'linear',
+  infinite: true,
   variableWidth:true,
   dots: false,
-  // infinite: true,
-	speed: 300,
   slidesToShow: 4,
-  slidesToScroll: 1,
-  centerMode: true
+  slidesToScroll: 1
 });
-
-
 
 
 

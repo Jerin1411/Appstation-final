@@ -4,7 +4,12 @@ body {
 
 .container {
   max-width: 1300px;
-  width: auto;
+  margin-right: auto;
+  margin-left: auto;
+
+  // @media (max-width: 1440px) {
+  //   max-width: 1140px;
+  // }
 }
 
 .heading {
@@ -42,7 +47,7 @@ body {
         position: absolute;
         width: 39px;
         height: 7px;
-        bottom: -25px;
+        bottom: -26px;
         z-index: 1;
         border-radius: 10px;
         left: 0;
@@ -109,6 +114,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   position: relative;
+  margin-bottom: 10px;
 
     &--primary__colored {
       color: $primary-color;
